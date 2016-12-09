@@ -1,2 +1,3 @@
 # ipv6
-ipv6 mix
+With program you will be able to test if your system support IPv6 sockets.
+
