@@ -1,14 +1,14 @@
 /*
- * 
+ *
  * Este pragrama verifica si el sistema donde se ejecuta
  * es capaz de crear un socket TCP bajo IPv6 (AF_INET6)
- * Si crea el socket el sistema soporta IPv6 en la IPv6.
+ * Si crea el socket el sistema soporta IPv6 en la API.
  * En caso contrario no es capaz de soportar IPv6 en la API.
  *
- * 
+ *
  * Jul 19, 2003
  * leo@ubiobio.cl
- */ 
+ */
 
 
 #include<stdio.h> /* fprintf() */
@@ -22,13 +22,12 @@ main (int argc, char *argv[])
 {
 	int sd = 0;
 	if ((sd = socket (AF_INET6, SOCK_STREAM, 0)) == -1) {
-			fprintf (stdout, "solo socket ipv4 estan soportados\n");
+			fprintf (stdout, "Only IPv4 sockets are allowed\n");
 			exit (1);
 	} else {
 			close(sd);
-			fprintf(stdout, "socket ipv6 estan soportados\n");
+			fprintf(stdout, "IPv6 sockets are allowed\n");
 			exit (0);
 	}
 	return 0;
 }
-
