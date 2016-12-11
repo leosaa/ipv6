@@ -15,8 +15,9 @@
 #include<sys/socket.h> /* socket(), AF_INET6 */
 #include<unistd.h> /* close() */
 
-int
-main (int argc, char *argv[])
+
+void
+test ()
 {
 	int sd = 0;
 	if ((sd = socket (AF_INET6, SOCK_STREAM, 0)) == -1) {
@@ -27,5 +28,11 @@ main (int argc, char *argv[])
 			fprintf(stdout, "IPv6 sockets are allowed\n");
 			exit (0);
 	}
+}
+
+int
+main (int argc, char *argv[])
+{
+    test ();
 	return 0;
 }
