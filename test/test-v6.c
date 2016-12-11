@@ -14,6 +14,7 @@
 #include<sys/types.h> /* SOCK_STREAM */
 #include<sys/socket.h> /* socket(), AF_INET6 */
 #include<unistd.h> /* close() */
+#include "test-v6.h"
 
 
 void
