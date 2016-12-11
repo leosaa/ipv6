@@ -20,7 +20,7 @@ main (int argc, char *argv[])
 {
 	int sd = 0;
 	if ((sd = socket (AF_INET6, SOCK_STREAM, 0)) == -1) {
-			fprintf (stdout, "Only IPv4 sockets are allowed\n");
+			fprintf (stdout, "IPv6 sockets are not allowed\n");
 			exit (1);
 	} else {
 			close(sd);
