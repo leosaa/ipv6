@@ -5,6 +5,7 @@
 #include <unistd.h> /* close () */
 #include <netdb.h> /* gethostbyname(), hostent, hostent, getservbyport() */
 #include <errno.h> /* errno*/
+#include "portscan-v4.h"
 
 #define START 1
 #define STOP 1023
